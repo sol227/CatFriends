@@ -28,8 +28,13 @@ const Friends = () => {
 
   // 추가
   const onAdd = (name, age, img) => {
+    if (name === "" || age === "" || img === "") {
+      alert("모든 항목을 입력해주세요.");
+      return;
+    }
     setData([...data, { id: data.length + 1, name, age, img }]);
   };
+
   return (
     <div className="container">
       <h2>고양이 친구들 {data.length}마리</h2>
