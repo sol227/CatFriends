@@ -1,6 +1,6 @@
 import React from "react";
 
-const FriendsCat = ({ item, list, onDel }) => {
+const FriendsCat = ({ item, onDel }) => {
   const { image, name, age, id } = item;
 
   return (
